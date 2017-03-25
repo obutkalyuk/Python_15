@@ -21,9 +21,10 @@ class Application:
 
     def type_text(self, attribute,  text):
         wd = self.wd
-        wd.find_element_by_name(attribute).click()
-        wd.find_element_by_name(attribute).clear()
-        wd.find_element_by_name(attribute).send_keys(text)
+        if text is not None:
+            wd.find_element_by_name(attribute).click()
+            wd.find_element_by_name(attribute).clear()
+            wd.find_element_by_name(attribute).send_keys(text)
 
     def destroy(self):
         self.wd.quit()
