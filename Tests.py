@@ -18,7 +18,6 @@ class test_and_group(unittest.TestCase):
 
     def test_add_group(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, user="admin", password="secret")
         self.create_group(wd, Group(name="Group1", header="header", footer="footer1"))
         self.return_to_group_page(wd)
@@ -26,7 +25,6 @@ class test_and_group(unittest.TestCase):
 
     def test_add_empty_group(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, user="admin", password="secret")
         self.create_group(wd, Group(name="", header="", footer=""))
         self.return_to_group_page(wd)
@@ -34,7 +32,6 @@ class test_and_group(unittest.TestCase):
 
     def test_add_contacts(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, user="admin", password="secret")
         self.create_contact(wd, Contact(firstName="James", lastName="Bond", address="London", homePhone="123",
                                         mobilePhone="456", workPhone="789", email1="email1@com.com",
@@ -44,7 +41,6 @@ class test_and_group(unittest.TestCase):
 
     def test_add_empty_contact(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, user="admin", password="secret")
         self.create_contact(wd, Contact(firstName="", lastName="", address="", homePhone="", mobilePhone="",
                                         workPhone="", email1="", email2="", email3=""))
@@ -55,6 +51,7 @@ class test_and_group(unittest.TestCase):
         wd.get("http://localhost/addressbook/")
 
     def login(self, wd, user, password):
+        self.open_home_page(wd)
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys(user)
