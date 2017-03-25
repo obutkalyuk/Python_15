@@ -1,26 +1,16 @@
 from selenium.webdriver.firefox.webdriver import WebDriver
 from fixture.session import SessionHelper
+from fixture.group import GroupHelper
+
 class Application:
     def __init__(self):
         self.wd = WebDriver()
         self.wd.implicitly_wait(60)
         self.session =SessionHelper(self)
+        self.group = GroupHelper(self)
 
     def open_home_page(self, wd):
         wd.get("http://localhost/addressbook/")
-
-    def create_group(self, group):
-        wd = self.wd
-        wd.find_element_by_link_text("groups").click()
-        wd.find_element_by_name("new").click()
-        self.type_text(wd, "group_name", group.name)
-        self.type_text(wd, "group_header", group.header)
-        self.type_text(wd, "group_footer", group.footer)
-        wd.find_element_by_name("submit").click()
-
-    def return_to_group_page(self):
-        wd = self.wd
-        wd.find_element_by_link_text("group page").click()
 
     def create_contact(self, contact):
         wd = self.wd
@@ -46,7 +36,6 @@ class Application:
     def return_to_home_page(self):
         wd = self.wd
         wd.find_element_by_link_text("home").click()
-
 
     def destroy(self):
         self.wd.quit()
