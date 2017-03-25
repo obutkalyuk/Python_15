@@ -16,41 +16,44 @@ class test_and_group(unittest.TestCase):
         self.wd = WebDriver()
         self.wd.implicitly_wait(60)
 
-    def test_add_group(self):
-        wd = self.wd
-        self.login(wd, user="admin", password="secret")
-        self.create_group(wd, Group(name="Group1", header="header", footer="footer1"))
-        self.return_to_group_page(wd)
-        self.logout(wd)
-
-    def test_add_empty_group(self):
-        wd = self.wd
-        self.login(wd, user="admin", password="secret")
-        self.create_group(wd, Group(name="", header="", footer=""))
-        self.return_to_group_page(wd)
-        self.logout(wd)
-
-    def test_add_contacts(self):
-        wd = self.wd
-        self.login(wd, user="admin", password="secret")
-        self.create_contact(wd, Contact(firstName="James", lastName="Bond", address="London", homePhone="123",
-                                        mobilePhone="456", workPhone="789", email1="email1@com.com",
-                                        email2="email2@com.com", email3="email3@com.com"))
-        self.return_to_home_page(wd)
-        self.logout(wd)
-
-    def test_add_empty_contact(self):
-        wd = self.wd
-        self.login(wd, user="admin", password="secret")
-        self.create_contact(wd, Contact(firstName="", lastName="", address="", homePhone="", mobilePhone="",
-                                        workPhone="", email1="", email2="", email3=""))
-        self.return_to_home_page(wd)
-        self.logout(wd)
-
     def open_home_page(self, wd):
         wd.get("http://localhost/addressbook/")
 
-    def login(self, wd, user, password):
+    def test_add_group(self):
+        wd = self.wd
+        self.login( user="admin", password="secret")
+        self.create_group( Group(name="Group1", header="header", footer="footer1"))
+        self.return_to_group_page()
+        self.logout()
+
+    def test_add_empty_group(self):
+        wd = self.wd
+        self.login(user="admin", password="secret")
+        self.create_group(Group(name="", header="", footer=""))
+        self.return_to_group_page()
+        self.logout()
+
+    def test_add_contacts(self):
+        wd = self.wd
+        self.login(user="admin", password="secret")
+        self.create_contact(Contact(firstName="James", lastName="Bond", address="London", homePhone="123",
+                                        mobilePhone="456", workPhone="789", email1="email1@com.com",
+                                        email2="email2@com.com", email3="email3@com.com"))
+        self.return_to_home_page()
+        self.logout()
+
+    def test_add_empty_contact(self):
+        wd = self.wd
+        self.login( user="admin", password="secret")
+        self.create_contact(Contact(firstName="", lastName="", address="", homePhone="", mobilePhone="",
+                                        workPhone="", email1="", email2="", email3=""))
+        self.return_to_home_page()
+        self.logout()
+
+
+
+    def login(self, user, password):
+        wd = self.wd
         self.open_home_page(wd)
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
@@ -60,7 +63,8 @@ class test_and_group(unittest.TestCase):
         wd.find_element_by_name("pass").send_keys(password)
         wd.find_element_by_xpath("//form[@id='LoginForm']/input[3]").click()
 
-    def create_group(self, wd, group):
+    def create_group(self, group):
+        wd = self.wd
         wd.find_element_by_link_text("groups").click()
         wd.find_element_by_name("new").click()
         self.type_text(wd, "group_name", group.name)
@@ -68,10 +72,12 @@ class test_and_group(unittest.TestCase):
         self.type_text(wd, "group_footer", group.footer)
         wd.find_element_by_name("submit").click()
 
-    def return_to_group_page(self, wd):
+    def return_to_group_page(self):
+        wd = self.wd
         wd.find_element_by_link_text("group page").click()
 
-    def create_contact(self, wd, contact):
+    def create_contact(self, contact):
+        wd = self.wd
         wd.find_element_by_link_text("add new").click()
 
         self.type_text(wd, "firstname", contact.firstName)
@@ -91,10 +97,12 @@ class test_and_group(unittest.TestCase):
         wd.find_element_by_name(attribute).clear()
         wd.find_element_by_name(attribute).send_keys(text)
 
-    def return_to_home_page(self, wd):
+    def return_to_home_page(self):
+        wd = self.wd
         wd.find_element_by_link_text("home").click()
 
-    def logout(self, wd):
+    def logout(self):
+        wd = self.wd
         wd.find_element_by_link_text("Logout").click()
 
     def tearDown(self):
