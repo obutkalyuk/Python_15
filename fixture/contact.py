@@ -17,3 +17,9 @@ class ContactHelper:
         self.app.type_text("email3", contact.email3)
 
         wd.find_element_by_name("submit").click()
+
+    def delete_first_contact(self):
+        wd = self.app.wd
+        wd.find_element_by_name("selected[]").click()
+        wd.find_element_by_css_selector("[value='Delete']").click()
+        wd.switch_to_alert().accept()
