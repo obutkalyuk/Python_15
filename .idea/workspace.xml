@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="487f4814-8d94-4bae-994f-803ae784ae99" name="Default" comment="remove wd parameter from helpers">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application.py" />
+    <list default="true" id="487f4814-8d94-4bae-994f-803ae784ae99" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests.py" afterPath="$PROJECT_DIR$/Tests.py" />
     </list>
@@ -22,8 +21,8 @@
       <file leaf-file-name="Tests.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="308">
+              <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
               </folding>
@@ -113,31 +112,7 @@
       <recent name="E:\Python\Python_15" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test_and_group and test_add_empty_contact">
-    <configuration default="false" name="py.test in test_and_group" type="tests" factoryName="py.test" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python_15" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="$PROJECT_DIR$/Group_tests.py" />
-      <option name="keywords" value="test_and_group" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="true" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.py.test in test_and_group (1)">
     <configuration default="false" name="py.test in test_and_group (1)" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -229,6 +204,30 @@
       <option name="USE_PATTERN" value="false" />
       <option name="testToRun" value="$PROJECT_DIR$/Tests.py" />
       <option name="keywords" value="test_and_group and test_add_empty_contact" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test in test_and_group and test_add_empty_group" type="tests" factoryName="py.test" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python_15" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="$PROJECT_DIR$/Tests.py" />
+      <option name="keywords" value="test_and_group and test_add_empty_group" />
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="true" />
@@ -369,19 +368,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group and test_add_contacts" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group and test_add_group" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group and test_add_empty_contact" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group and test_add_contacts" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group and test_add_group" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group and test_add_empty_contact" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group and test_add_empty_group" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group and test_add_empty_contact" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group (1)" />
         <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group and test_add_group" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group and test_add_contacts" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group and test_add_empty_group" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group and test_add_empty_contact" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_and_group and test_add_contacts" />
       </list>
     </recent_temporary>
   </component>
@@ -410,18 +409,19 @@
       <option name="project" value="LOCAL" />
       <updated>1490445620320</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add class application">
+      <created>1490448679268</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1490448679268</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_test_and_group_and_test_add_contacts - 2017.03.25 at 13h 11m 08s.xml">
-      <configuration name="py.test in test_and_group and test_add_contacts" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_and_group_and_test_add_contacts - 2017.03.25 at 13h 11m 45s.xml">
-      <configuration name="py.test in test_and_group and test_add_contacts" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_and_group_and_test_add_contacts - 2017.03.25 at 13h 12m 03s.xml">
-      <configuration name="py.test in test_and_group and test_add_contacts" configurationId="tests" />
+    <history-entry file="py_test_in_test_and_group_(1) - 2017.03.25 at 14h 34m 37s.xml">
+      <configuration name="py.test in test_and_group (1)" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test_and_group_and_test_add_contacts - 2017.03.25 at 13h 22m 36s.xml">
       <configuration name="py.test in test_and_group and test_add_contacts" configurationId="tests" />
@@ -441,7 +441,13 @@
     <history-entry file="py_test_in_test_and_group_and_test_add_empty_contact - 2017.03.25 at 13h 39m 47s.xml">
       <configuration name="py.test in test_and_group and test_add_empty_contact" configurationId="tests" />
     </history-entry>
+    <history-entry file="py_test_in_test_and_group_and_test_add_empty_group - 2017.03.25 at 14h 32m 39s.xml">
+      <configuration name="py.test in test_and_group and test_add_empty_group" configurationId="tests" />
+    </history-entry>
     <history-entry file="py_test_in_test_and_group_and_test_add_group - 2017.03.25 at 13h 34m 18s.xml">
+      <configuration name="py.test in test_and_group and test_add_group" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_and_group_and_test_add_group - 2017.03.25 at 14h 33m 49s.xml">
       <configuration name="py.test in test_and_group and test_add_group" configurationId="tests" />
     </history-entry>
   </component>
@@ -456,9 +462,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282353" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -483,7 +489,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="remove open_home_page to login method" />
     <MESSAGE value="remove wd parameter from helpers" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove wd parameter from helpers" />
+    <MESSAGE value="add class application" />
+    <option name="LAST_COMMIT_MESSAGE" value="add class application" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -569,8 +576,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        <state relative-caret-position="308">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
           </folding>

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import unittest
-
+import pytest
 from application import Application
 from contact import Contact
 from group import Group
@@ -18,21 +18,18 @@ class test_and_group(unittest.TestCase):
         self.app = Application()
 
     def test_add_group(self):
-        wd = self.wd
         self.app.login( user="admin", password="secret")
         self.app.create_group( Group(name="Group1", header="header", footer="footer1"))
         self.app.return_to_group_page()
         self.app.logout()
 
     def test_add_empty_group(self):
-        wd = self.wd
         self.app.login(user="admin", password="secret")
         self.app.create_group(Group(name="", header="", footer=""))
         self.app.return_to_group_page()
         self.app.logout()
 
     def test_add_contacts(self):
-        wd = self.wd
         self.app.login(user="admin", password="secret")
         self.app.create_contact(Contact(firstName="James", lastName="Bond", address="London", homePhone="123",
                                         mobilePhone="456", workPhone="789", email1="email1@com.com",
@@ -41,7 +38,6 @@ class test_and_group(unittest.TestCase):
         self.app.logout()
 
     def test_add_empty_contact(self):
-        wd = self.wd
         self.app.login( user="admin", password="secret")
         self.app.create_contact(Contact(firstName="", lastName="", address="", homePhone="", mobilePhone="",
                                         workPhone="", email1="", email2="", email3=""))
