@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="487f4814-8d94-4bae-994f-803ae784ae99" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fixture/group.py" afterPath="$PROJECT_DIR$/fixture/group.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/group.py" afterPath="$PROJECT_DIR$/model/group.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Test_Group_Delete.py" afterPath="$PROJECT_DIR$/test/Test_Group_Delete.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -184,7 +181,7 @@
       <recent name="E:\Python\Python_15" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test_modify_first_group">
+  <component name="RunManager" selected="Python tests.py.test in test">
     <configuration default="false" name="py.test in test" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -448,10 +445,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_first_group" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_contacts" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_delete_first_contact" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_first_group" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_contacts" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_delete_first_contact" />
         <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_delete_firstgroup" />
       </list>
     </recent_temporary>
@@ -579,12 +576,19 @@
       <option name="project" value="LOCAL" />
       <updated>1490479289063</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Test Modify group">
+      <created>1490480022888</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1490480022888</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_test_modify_contacts - 2017.03.25 at 22h 26m 42s.xml">
-      <configuration name="py.test in test_modify_contacts" configurationId="tests" />
+    <history-entry file="py_test_in_test - 2017.03.25 at 23h 33m 38s.xml">
+      <configuration name="py.test in test" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test_modify_contacts - 2017.03.25 at 22h 46m 13s.xml">
       <configuration name="py.test in test_modify_contacts" configurationId="tests" />
@@ -666,7 +670,8 @@
     <MESSAGE value="Task#6" />
     <MESSAGE value="Delete first contact" />
     <MESSAGE value="Test Modify contact" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Modify contact" />
+    <MESSAGE value="Test Modify group" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Modify group" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
