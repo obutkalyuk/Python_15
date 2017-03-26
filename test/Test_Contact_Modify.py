@@ -8,13 +8,11 @@ def test_modify_contacts(app):
                                     email2="email2@com.com", email3="email3@com.com")
 
     Edition = Contact(firstName="Jina", lastName="Lolobridgida", address="Milan")
-
-    app.session.login(user="admin", password="secret")
     app.contact.create_contact(FirstContact)
     app.contact.find_contact(FirstContact)
     app.contact.modify_contact( Edition)
     app.return_to_home_page()
-    app.session.logout()
+
 
 
 
