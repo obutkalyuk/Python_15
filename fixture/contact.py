@@ -35,3 +35,15 @@ class ContactHelper:
         wd = self.app.wd
         self.set_fields(edition)
         wd.find_element_by_name("update").click()
+
+    def modify_first_contact(self,edition):
+        wd = self.app.wd
+        row = wd.find_element_by_xpath("//tr[2]") #1st row is header
+        editLink = row.find_element_by_css_selector("[href^='edit']")
+        editLink.click()
+        self.set_fields(edition)
+        wd.find_element_by_name("update").click()
+
+    def count(self):
+        wd = self.app.wd
+        return len(wd.find_elements_by_name("selected[]"))
