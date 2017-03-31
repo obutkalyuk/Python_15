@@ -7,3 +7,4 @@ def test_delete_first_contact(app):
                                            mobilePhone="456", workPhone="789", email1="email1@com.com",
                                            email2="email2@com.com", email3="email3@com.com"))
     app.contact.delete_first_contact()
+
