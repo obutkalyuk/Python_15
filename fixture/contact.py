@@ -25,11 +25,18 @@ class ContactHelper:
         self.app.type_text("email3", contact.email3)
 
     def delete_first_contact(self):
+       self.delete_contact_by_index(0)
+
+    def delete_contact_by_index(self, index):
         wd = self.app.wd
-        wd.find_element_by_name("selected[]").click()
+        self.select_by_index(index)
         wd.find_element_by_css_selector("[value='Delete']").click()
         wd.switch_to_alert().accept()
         self.contact_cache = None
+
+    def select_by_index(self, index):
+        wd = self.app.wd
+        wd.find_elements_by_name("selected[]")[index].click()
 
     def find_contact(self, contact):
         wd = self.app.wd
