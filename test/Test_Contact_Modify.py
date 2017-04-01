@@ -22,9 +22,10 @@ def test_modify_contacts(app):
     app.contact.find_contact(FirstContact)
     app.contact.modify_contact(edition)
     app.return_to_home_page()
-    new_contacts = app.contact.get_contact_list()
 
-    assert len(old_contacts) == len(new_contacts)
+
+    assert len(old_contacts) == app.contact.count()
+    new_contacts = app.contact.get_contact_list()
     index = find_index(old_contacts, id)
     edition.id = id
     old_contacts[index] = edition
@@ -43,9 +44,10 @@ def test_modify_first_contacts(app):
     edition.id = old_contacts[0].id
     app.contact.modify_first_contact(edition)
     app.return_to_home_page()
+
+    assert len(old_contacts) == app.contact.count()
     new_contacts = app.contact.get_contact_list()
 
-    assert len(old_contacts) == len(new_contacts)
     old_contacts[0] = edition
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
 
