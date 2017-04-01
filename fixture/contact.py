@@ -33,6 +33,12 @@ class ContactHelper:
         editLink = row.find_element_by_css_selector("[href^='edit']")
         editLink.click()
 
+    def get_id(self, contact):
+        wd = self.app.wd
+        row = wd.find_element_by_xpath("//tr[td[.='"+contact.firstName+"'] and td[.='"+contact.lastName+"']]")
+        id = row.find_element_by_name("selected[]").get_attribute("value")
+        return id
+
     def modify_contact(self,edition):
         wd = self.app.wd
         self.set_fields(edition)

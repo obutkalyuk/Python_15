@@ -1,16 +1,34 @@
 # -*- coding: utf-8 -*-
 from model.contact import Contact
 
+#todo move to another place. later.
+def find_index(source_list, id):
+    for element in source_list:
+        if element.id == id:
+            return source_list.index(element)
+
+
+
 def test_modify_contacts(app):
-    FirstContact = Contact(firstName="James", lastName="Bond", address="London", homePhone="123",
+    FirstContact = Contact(firstName="James", lastName="Corleone", address="London", homePhone="123",
                                     mobilePhone="456", workPhone="789", email1="email1@com.com",
                                     email2="email2@com.com", email3="email3@com.com")
 
-    Edition = Contact(firstName="Jina", lastName="Lolobridgida", address="Milan")
+    edition = Contact(firstName="Jina", lastName="Lolobridgida", address="Milan")
+
     app.contact.create_contact(FirstContact)
+    old_contacts = app.contact.get_contact_list()
+    id = app.contact.get_id(FirstContact)
     app.contact.find_contact(FirstContact)
-    app.contact.modify_contact( Edition)
+    app.contact.modify_contact(edition)
     app.return_to_home_page()
+    new_contacts = app.contact.get_contact_list()
+
+    assert len(old_contacts) == len(new_contacts)
+    index = find_index(old_contacts, id)
+    edition.id = id
+    old_contacts[index] = edition
+    assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
 
 def test_modify_first_contacts(app):
     if app.contact.count() == 0:
@@ -19,10 +37,17 @@ def test_modify_first_contacts(app):
                                            email2="email2@com.com", email3="email3@com.com"))
 
 
-    Edition = Contact(firstName="Alice", lastName="Milano", address="Chickago")
+    edition = Contact(firstName="Alice", lastName="Milano", address="Chickago")
 
-    app.contact.modify_first_contact(Edition)
+    old_contacts = app.contact.get_contact_list()
+    edition.id = old_contacts[0].id
+    app.contact.modify_first_contact(edition)
     app.return_to_home_page()
+    new_contacts = app.contact.get_contact_list()
+
+    assert len(old_contacts) == len(new_contacts)
+    old_contacts[0] = edition
+    assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
 
 
 
