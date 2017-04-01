@@ -13,8 +13,7 @@ def test_add_contacts(app):
 
     assert len(old_contacts) + 1 == len(new_contacts)
     old_contacts.append(new_contact)
-    a = sorted(old_contacts, key=Contact.id_or_max)
-    b = sorted(new_contacts, key=Contact.id_or_max)
+
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
 
 def test_add_empty_contact(app):
