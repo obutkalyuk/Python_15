@@ -57,8 +57,11 @@ class ContactHelper:
         self.contact_cache = None
 
     def modify_first_contact(self,edition):
+        self.modify_by_index(0)
+
+    def modify_by_index(self, index, edition):
         wd = self.app.wd
-        row = wd.find_element_by_xpath("//tr[2]") #1st row is header
+        row = wd.find_element_by_xpath("//tr["+str(index+2)+"]")  # 1st row is header
         editLink = row.find_element_by_css_selector("[href^='edit']")
         editLink.click()
         self.set_fields(edition)
