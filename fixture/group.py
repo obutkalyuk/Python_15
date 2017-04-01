@@ -15,23 +15,33 @@ class GroupHelper:
         self.return_to_group_page()
         self.group_cache = None
 
+    def select_group_by_index(self, index):
+        wd = self.app.wd
+        wd.find_element_by_xpath("//span[" + str(index + 1) + "]/input[@name='selected[]']").click()
+
     def delete_first(self):
+        self.delete_by_index(0)
+
+    def delete_by_index(self, index):
         wd = self.app.wd
         self.open_group_page()
-        wd.find_element_by_name("selected[]").click()
+        self.select_group_by_index(index)
         wd.find_element_by_name("delete").click()
         self.return_to_group_page()
         self.group_cache = None
 
-    def modify_first(self, edition):
+    def modify_by_index(self, edition, index):
         wd = self.app.wd
         self.open_group_page()
-        wd.find_element_by_name("selected[]").click()
+        self.select_group_by_index(index)
         wd.find_element_by_name("edit").click()
         self.set_fields(edition)
         wd.find_element_by_name("update").click()
         self.return_to_group_page()
         self.group_cache = None
+
+    def modify_first(self, edition):
+        self.modify_by_index(edition, 0)
 
     def count(self):
         wd = self.app.wd
