@@ -17,7 +17,8 @@ class GroupHelper:
 
     def select_group_by_index(self, index):
         wd = self.app.wd
-        wd.find_element_by_xpath("//span[" + str(index + 1) + "]/input[@name='selected[]']").click()
+        xpath = "//span[%s]/input[@name='selected[]']" % str(index+1)
+        wd.find_element_by_xpath(xpath).click()
 
     def delete_first(self):
         self.delete_by_index(0)

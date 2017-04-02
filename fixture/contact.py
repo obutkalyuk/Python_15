@@ -39,14 +39,18 @@ class ContactHelper:
         wd.find_elements_by_name("selected[]")[index].click()
 
     def find_contact(self, contact):
-        wd = self.app.wd
-        row = wd.find_element_by_xpath("//tr[td[.='"+contact.firstName+"'] and td[.='"+contact.lastName+"']]")
+        row = self.get_row(contact)
         editLink = row.find_element_by_css_selector("[href^='edit']")
         editLink.click()
 
-    def get_id(self, contact):
+    def get_row(self, contact):
         wd = self.app.wd
-        row = wd.find_element_by_xpath("//tr[td[.='"+contact.firstName+"'] and td[.='"+contact.lastName+"']]")
+        locator = "//tr[td[.='%s'] and td[.='%s']]" % (contact.firstName, contact.lastName)
+        row = wd.find_element_by_xpath(locator)
+        return row
+
+    def get_id(self, contact):
+        row = self.get_row(contact)
         id = row.find_element_by_name("selected[]").get_attribute("value")
         return id
 
@@ -61,12 +65,18 @@ class ContactHelper:
 
     def modify_by_index(self, index, edition):
         wd = self.app.wd
-        row = wd.find_element_by_xpath("//tr["+str(index+2)+"]")  # 1st row is header
+        row = self.get_row_by_index(index)
         editLink = row.find_element_by_css_selector("[href^='edit']")
         editLink.click()
         self.set_fields(edition)
         wd.find_element_by_name("update").click()
         self.contact_cache = None
+
+    def get_row_by_index(self, index):
+        wd = self.app.wd
+        xpath = "//tr[%s]" % str(index + 2) # 1st row is header
+        row = wd.find_element_by_xpath(xpath)
+        return row
 
     def count(self):
         wd = self.app.wd
