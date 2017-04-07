@@ -17,11 +17,11 @@ def test_modify_contacts(app):
 
     edition = Contact(firstName="Jina", lastName="Lolobridgida", address="Milan")
 
-    app.contact.create_contact(FirstContact)
+    app.contact.create(FirstContact)
     old_contacts = app.contact.get_contact_list()
-    id = app.contact.get_id(FirstContact)
-    app.contact.find_contact(FirstContact)
-    app.contact.modify_contact(edition)
+    id = app.contact.get_id_from_table(FirstContact)
+    app.contact.open_for_edit(FirstContact)
+    app.contact.update(edition)
     app.return_to_home_page()
 
     assert len(old_contacts) == app.contact.count()
@@ -33,9 +33,9 @@ def test_modify_contacts(app):
 
 def test_modify_random_contacts(app):
     if app.contact.count() == 0:
-        app.contact.create_contact(Contact(firstName="Jack", lastName="London", address="Alaska", homePhone="123",
-                                           mobilePhone="456", workPhone="789", email1="email1@com.com",
-                                           email2="email2@com.com", email3="email3@com.com"))
+        app.contact.create(Contact(firstName="Jack", lastName="London", address="Alaska", homePhone="123",
+                                   mobilePhone="456", workPhone="789", email1="email1@com.com",
+                                   email2="email2@com.com", email3="email3@com.com"))
 
 
     edition = Contact(firstName="Alice", lastName="Milano", address="Chickago")
