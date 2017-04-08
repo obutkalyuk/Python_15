@@ -78,15 +78,30 @@ class ContactHelper:
             wd = self.app.wd
             self.contact_cache = []
             for row in wd.find_elements_by_css_selector("tr[name='entry']"):
-                id = row.find_element_by_name("selected[]").get_attribute("id")
-                last_name = row.find_element_by_xpath(".//td[2]").text
-                fisrt_name = row.find_element_by_xpath(".//td[3]").text
-                address = row.find_element_by_xpath(".//td[4]").text
-                email = row.find_element_by_xpath(".//td[5]").text
-                phone = row.find_element_by_xpath(".//td[6]").text
-                contact = Contact(id=id, firstName=fisrt_name, lastName=last_name, address=address)
+                contact = self.get_info_from_home_page_by_row(row)
                 self.contact_cache.append(contact)
         return list(self.contact_cache)
+
+    def get_info_from_home_page_by_index(self, index):
+        row = self.get_row_by_index(index)
+        return self.get_info_from_home_page_by_row(row)
+
+
+    def get_info_from_home_page_by_row(self, row):
+        id = row.find_element_by_name("selected[]").get_attribute("id")
+        last_name = row.find_element_by_xpath(".//td[2]").text
+        fisrt_name = row.find_element_by_xpath(".//td[3]").text
+        address = row.find_element_by_xpath(".//td[4]").text
+        emails = row.find_element_by_xpath(".//td[5]").text.splitlines()
+        phones = row.find_element_by_xpath(".//td[6]").text.splitlines()
+        contact = Contact(id=id, firstName=fisrt_name, lastName=last_name, address=address,
+                          homePhone=phones[0], mobilePhone=phones[1], workPhone=phones[2],
+                          email1=emails[0], email2=emails[1], email3=emails[2])
+        return contact
+
+    def get_info_from_edit_page(self, index):
+        self.open_for_edit_by_index(index)
+        return self.get_fields()
 
     # work with first elements
     def delete_first(self):
@@ -112,3 +127,23 @@ class ContactHelper:
         self.app.type_text("email", contact.email1)
         self.app.type_text("email2", contact.email2)
         self.app.type_text("email3", contact.email3)
+
+    def get_fields(self):
+        wd = self.app.wd
+        fisrt_name = wd.find_element_by_name("firstname").get_attribute("value")
+        last_name = wd.find_element_by_name("lastname").get_attribute("value")
+        address = wd.find_element_by_name("address").get_attribute("value")
+        homePhone = wd.find_element_by_name("home").get_attribute("value")
+        mobilePhone = wd.find_element_by_name("mobile").get_attribute("value")
+        workPhone = wd.find_element_by_name("work").get_attribute("value")
+        fax = wd.find_element_by_name("fax").get_attribute("value")
+        email1 = wd.find_element_by_name("email").get_attribute("value")
+        email2 = wd.find_element_by_name("email2").get_attribute("value")
+        email3 = wd.find_element_by_name("email3").get_attribute("value")
+        id = wd.find_element_by_name("id").get_attribute("value")
+
+        contact = Contact(id=id, firstName=fisrt_name, lastName=last_name, address=address, homePhone=homePhone,
+                          mobilePhone=mobilePhone, workPhone=workPhone, email1=email1, email2 = email2,
+                          email3 = email3)
+        return contact
+
