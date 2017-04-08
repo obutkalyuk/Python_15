@@ -4,6 +4,8 @@
     <list default="true" id="487f4814-8d94-4bae-994f-803ae784ae99" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fixture/contact.py" afterPath="$PROJECT_DIR$/fixture/contact.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/contact.py" afterPath="$PROJECT_DIR$/model/contact.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Test_Phones.py" afterPath="$PROJECT_DIR$/test/Test_Phones.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +23,10 @@
       <file leaf-file-name="contact.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fixture/contact.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="145" column="71" lean-forward="false" selection-start-line="145" selection-start-column="71" selection-end-line="145" selection-end-column="71" />
+            <state relative-caret-position="242">
+              <caret line="96" column="116" lean-forward="false" selection-start-line="96" selection-start-column="116" selection-end-line="96" selection-end-column="116" />
               <folding>
                 <element signature="e#93#107#0" expanded="false" />
-                <element signature="e#192#381#0" expanded="false" />
                 <element signature="e#429#621#0" expanded="false" />
                 <element signature="e#669#747#0" expanded="false" />
                 <element signature="e#795#917#0" expanded="false" />
@@ -37,8 +38,11 @@
                 <element signature="e#1919#2039#0" expanded="false" />
                 <element signature="e#2096#2272#0" expanded="false" />
                 <element signature="e#2303#2378#0" expanded="false" />
-                <element signature="e#3842#3865#0" expanded="false" />
-                <element signature="e#3912#3935#0" expanded="false" />
+                <element signature="e#2420#2750#0" expanded="false" />
+                <element signature="e#3731#3798#0" expanded="false" />
+                <element signature="e#3867#3890#0" expanded="false" />
+                <element signature="e#3937#3960#0" expanded="false" />
+                <element signature="e#4029#4162#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -60,18 +64,8 @@
       <file leaf-file-name="Test_Phones.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/Test_Phones.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/contact.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="68">
+              <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -113,7 +107,6 @@
         <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/fixture/application.py" />
         <option value="$PROJECT_DIR$/model/group.py" />
-        <option value="$PROJECT_DIR$/model/contact.py" />
         <option value="$PROJECT_DIR$/test/Test_Group_Add.py" />
         <option value="$PROJECT_DIR$/test/Test_Contact_Add.py" />
         <option value="$PROJECT_DIR$/test/Test_Group_Delete.py" />
@@ -123,6 +116,7 @@
         <option value="$PROJECT_DIR$/fixture/session.py" />
         <option value="$PROJECT_DIR$/fixture/group.py" />
         <option value="$PROJECT_DIR$/test/tests_phones.py" />
+        <option value="$PROJECT_DIR$/model/contact.py" />
         <option value="$PROJECT_DIR$/test/Test_Phones.py" />
         <option value="$PROJECT_DIR$/fixture/contact.py" />
       </list>
@@ -739,15 +733,19 @@
       <option name="project" value="LOCAL" />
       <updated>1491577514378</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Add test_phones">
+      <created>1491653485011</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1491653485011</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="py_test_for_test_Test_Phones - 2017.04.08 at 12h 27m 52s.xml">
       <configuration name="py.test for test.Test_Phones" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_Test_Phones_test_phones_on_homepage - 2017.04.08 at 12h 19m 10s.xml">
-      <configuration name="py.test for test.Test_Phones.test_phones_on_homepage" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_for_test_Test_Phones_test_phones_on_homepage - 2017.04.08 at 12h 36m 06s.xml">
       <configuration name="py.test for test.Test_Phones.test_phones_on_homepage" configurationId="tests" />
@@ -767,11 +765,14 @@
     <history-entry file="py_test_in_Test_Phones_py - 2017.04.08 at 12h 56m 42s.xml">
       <configuration name="py.test in Test_Phones.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test - 2017.04.02 at 20h 59m 08s.xml">
-      <configuration name="py.test in test" configurationId="tests" />
+    <history-entry file="py_test_in_Test_Phones_py - 2017.04.08 at 16h 35m 29s.xml">
+      <configuration name="py.test in Test_Phones.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test - 2017.04.07 at 17h 00m 42s.xml">
-      <configuration name="py.test in test" configurationId="tests" />
+    <history-entry file="py_test_in_Test_Phones_py - 2017.04.08 at 16h 40m 44s.xml">
+      <configuration name="py.test in Test_Phones.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_Test_Phones_py - 2017.04.08 at 16h 41m 49s.xml">
+      <configuration name="py.test in Test_Phones.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -830,7 +831,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="extract ContactHelper&#10;Task#5 - 2-level architecture" />
     <MESSAGE value="divide tests for contacts and for groups&#10;" />
     <MESSAGE value="add common fixture and test &quot;delete first group&quot;&#10;" />
     <MESSAGE value="Task#6" />
@@ -855,18 +855,19 @@
     <MESSAGE value="modify random contact" />
     <MESSAGE value="format str" />
     <MESSAGE value="rename methods for contacts" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename methods for contacts" />
+    <MESSAGE value="Add test_phones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test_phones" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/fixture/contact.py</url>
-          <line>96</line>
+          <line>95</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="40" />
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1164,14 +1165,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/contact.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fixture/application.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1183,21 +1176,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model/contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/Test_Phones.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        <state relative-caret-position="68">
+          <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fixture/contact.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="145" column="71" lean-forward="false" selection-start-line="145" selection-start-column="71" selection-end-line="145" selection-end-column="71" />
+        <state relative-caret-position="242">
+          <caret line="96" column="116" lean-forward="false" selection-start-line="96" selection-start-column="116" selection-end-line="96" selection-end-column="116" />
           <folding>
             <element signature="e#93#107#0" expanded="false" />
-            <element signature="e#192#381#0" expanded="false" />
             <element signature="e#429#621#0" expanded="false" />
             <element signature="e#669#747#0" expanded="false" />
             <element signature="e#795#917#0" expanded="false" />
@@ -1209,8 +1209,11 @@
             <element signature="e#1919#2039#0" expanded="false" />
             <element signature="e#2096#2272#0" expanded="false" />
             <element signature="e#2303#2378#0" expanded="false" />
-            <element signature="e#3842#3865#0" expanded="false" />
-            <element signature="e#3912#3935#0" expanded="false" />
+            <element signature="e#2420#2750#0" expanded="false" />
+            <element signature="e#3731#3798#0" expanded="false" />
+            <element signature="e#3867#3890#0" expanded="false" />
+            <element signature="e#3937#3960#0" expanded="false" />
+            <element signature="e#4029#4162#0" expanded="false" />
           </folding>
         </state>
       </provider>
