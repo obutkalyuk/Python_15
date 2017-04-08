@@ -2,6 +2,7 @@ from selenium.webdriver.firefox.webdriver import WebDriver
 from fixture.session import SessionHelper
 from fixture.group import GroupHelper
 from fixture.contact import ContactHelper
+import re
 
 class Application:
     def __init__(self):
@@ -34,5 +35,30 @@ class Application:
             wd.find_element_by_name(attribute).clear()
             wd.find_element_by_name(attribute).send_keys(text)
 
+    def clear(self, s):
+        return re.sub("[() -]", "", s)
+
+    def merge_phones(self, contact):
+        a0 = filter(lambda x: x is not None,
+                    [contact.homePhone, contact.mobilePhone, contact.workPhone, contact.secondaryPhone])
+        a = map(lambda x: self.clear(x), a0)
+        b = filter(lambda x: x != "", a)
+        c = "\n".join(b)
+        return "\n".join(filter(lambda x: x != "",
+                                map(lambda x: self.clear(x),
+                                    filter(lambda x: x is not None,
+                                           [contact.homePhone, contact.mobilePhone, contact.workPhone,
+                                            contact.secondaryPhone]))))
+
+    def merge_emails(self, contact):
+        a0 = filter(lambda x: x is not None,
+                    [contact.email1, contact.email2, contact.email3])
+        a = map(lambda x: self.clear(x), a0)
+        b = filter(lambda x: x != "", a)
+        c = "\n".join(b)
+        return "\n".join(filter(lambda x: x != "",
+                                map(lambda x: self.clear(x),
+                                    filter(lambda x: x is not None,
+                                           [contact.email1, contact.email2, contact.email3]))))
     def destroy(self):
         self.wd.quit()

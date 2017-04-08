@@ -92,11 +92,10 @@ class ContactHelper:
         last_name = row.find_element_by_xpath(".//td[2]").text
         fisrt_name = row.find_element_by_xpath(".//td[3]").text
         address = row.find_element_by_xpath(".//td[4]").text
-        emails = row.find_element_by_xpath(".//td[5]").text.splitlines()
-        phones = row.find_element_by_xpath(".//td[6]").text.splitlines()
-        contact = Contact(id=id, firstName=fisrt_name, lastName=last_name, address=address,
-                          homePhone=phones[0], mobilePhone=phones[1], workPhone=phones[2], secondaryPhone=phones[3],
-                          email1=emails[0], email2=emails[1], email3=emails[2])
+        emails = row.find_element_by_xpath(".//td[5]").text
+        phones = row.find_element_by_xpath(".//td[6]").text
+        contact = Contact(id=id, firstName=fisrt_name, lastName=last_name, address=address, all_phones = phones, all_emails = emails
+                          )
         return contact
 
     def get_info_from_edit_page(self, index):
