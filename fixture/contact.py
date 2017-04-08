@@ -1,4 +1,5 @@
 from model.contact import Contact
+import re
 
 class ContactHelper:
     def __init__(self, app):
@@ -102,6 +103,10 @@ class ContactHelper:
         self.open_for_edit_by_index(index)
         return self.get_fields()
 
+    def get_info_from_view_page(self, index):
+        self.open_for_view_by_index(index)
+        return self.get_info()
+
     # work with first elements
     def delete_first(self):
         self.delete_by_index(0)
@@ -128,7 +133,6 @@ class ContactHelper:
         self.app.type_text("email2", contact.email2)
         self.app.type_text("email3", contact.email3)
 
-
     def get_fields(self):
         wd = self.app.wd
         fisrt_name = wd.find_element_by_name("firstname").get_attribute("value")
@@ -150,3 +154,16 @@ class ContactHelper:
                           email1=email1, email2 = email2, email3 = email3)
         return contact
 
+#     method for view page
+
+    def get_info(self):
+        wd = self.app.wd
+        info = wd.find_element_by_id("content").text
+        homePhone = re.search("H: (.*)", info).group(1)
+        mobilePhone = re.search("M: (.*)", info).group(1)
+        workPhone = re.search("W: (.*)", info).group(1)
+        secondaryPhone = re.search("P: (.*)", info).group(1)
+
+        contact = Contact( homePhone=homePhone,
+                          mobilePhone=mobilePhone, workPhone=workPhone, secondaryPhone=secondaryPhone)
+        return contact
