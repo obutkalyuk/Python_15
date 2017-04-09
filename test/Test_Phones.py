@@ -3,7 +3,7 @@ def test_phones_on_home_page(app):
     contact_from_home_page = app.contact.get_info_from_home_page_by_index(0)
     contact_from_edit_page = app.contact.get_info_from_edit_page(0)
 
-    assert contact_from_home_page.all_phones == app.merge_phones(contact_from_edit_page)
+    assert contact_from_home_page.all_phones == contact_from_edit_page.merge_phones()
 
 
 def test_phones_on_contact_view_page(app):

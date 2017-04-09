@@ -166,3 +166,5 @@ class ContactHelper:
         contact = Contact( homePhone=homePhone,
                           mobilePhone=mobilePhone, workPhone=workPhone, secondaryPhone=secondaryPhone)
         return contact
+
+

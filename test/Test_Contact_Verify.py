@@ -18,5 +18,5 @@ def test_verify_random_contacts(app):
     assert contact_from_home_page.firstName == contact_from_edit_page.firstName
     assert contact_from_home_page.lastName == contact_from_edit_page.lastName
     assert contact_from_home_page.address == contact_from_edit_page.address
-    assert contact_from_home_page.all_phones == app.merge_phones(contact_from_edit_page)
-    assert contact_from_home_page.all_emails == app.merge_emails(contact_from_edit_page)
+    assert contact_from_home_page.all_phones == contact_from_edit_page.merge_phones()
+    assert contact_from_home_page.all_emails == contact_from_edit_page.merge_emails()

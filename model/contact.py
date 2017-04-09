@@ -1,4 +1,6 @@
 from sys import maxsize
+from fixture.string_helper import clear
+
 class Contact:
     def __init__(self, id= None, firstName=None, lastName=None, address=None, all_phones = None, all_emails = None, homePhone=None,mobilePhone=None,
                  workPhone=None, secondaryPhone = None,  email1=None, email2=None, email3=None):
@@ -30,3 +32,27 @@ class Contact:
                and (self.firstName == other.firstName) \
                and (self.lastName == other.lastName)
 
+
+
+    def merge_phones(self):
+        a0 = filter(lambda x: x is not None,
+                    [self.homePhone, self.mobilePhone, self.workPhone, self.secondaryPhone])
+        a = map(lambda x: clear(x), a0)
+        b = filter(lambda x: x != "", a)
+        c = "\n".join(b)
+        return "\n".join(filter(lambda x: x != "",
+                                map(lambda x: clear(x),
+                                    filter(lambda x: x is not None,
+                                           [self.homePhone, self.mobilePhone, self.workPhone,
+                                            self.secondaryPhone]))))
+
+    def merge_emails(self):
+        a0 = filter(lambda x: x is not None,
+                    [self.email1, self.email2, self.email3])
+        a = map(lambda x: clear(x), a0)
+        b = filter(lambda x: x != "", a)
+        c = "\n".join(b)
+        return "\n".join(filter(lambda x: x != "",
+                                map(lambda x: clear(x),
+                                    filter(lambda x: x is not None,
+                                           [self.email1, self.email2, self.email3]))))
