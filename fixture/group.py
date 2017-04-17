@@ -12,6 +12,7 @@ class GroupHelper:
         wd.find_element_by_name("new").click()
         self.set_fields(group)
         wd.find_element_by_name("submit").click()
+
         self.return_to_group_page()
         self.group_cache = None
 
@@ -61,6 +62,7 @@ class GroupHelper:
     def set_fields(self, group):
         self.app.type_text("group_name", group.name)
         self.app.type_text("group_header", group.header)
+        self.app.type_text("group_footer", group.footer)
 
 
     def get_group_list(self):

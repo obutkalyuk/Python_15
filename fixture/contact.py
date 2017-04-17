@@ -1,6 +1,7 @@
 from model.contact import Contact
 import re
 
+
 class ContactHelper:
     def __init__(self, app):
         self.app = app
@@ -13,6 +14,7 @@ class ContactHelper:
         wd.find_element_by_link_text("add new").click()
         self.set_fields(contact)
         wd.find_element_by_name("submit").click()
+        self.app.wait.until(lambda d: d.find_element_by_id("maintable"))
         self.contact_cache = None
 
     def delete_by_index(self, index):

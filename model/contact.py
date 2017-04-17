@@ -25,7 +25,7 @@ class Contact:
             return maxsize
 
     def __repr__(self):
-        return "%s: %s %s" % (self.id, self.firstName, self.lastName)
+        return "%s: '%s' '%s'" % (self.id, self.firstName, self.lastName)
 
     def __eq__(self, other):
         return (self.id is None or other.id is None or self.id == other.id) \
