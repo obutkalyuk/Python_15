@@ -21,8 +21,8 @@
       <file leaf-file-name="conftest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conftest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="34" column="68" lean-forward="false" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
+            <state relative-caret-position="304">
+              <caret line="19" column="91" lean-forward="false" selection-start-line="19" selection-start-column="91" selection-end-line="19" selection-end-column="91" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -198,7 +198,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Olga Butkaliuk/AppData/Local/Programs/Python/Python36-32/Lib/string.py&#10;%s&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
@@ -225,55 +225,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in Test_Contact_Add.py">
-    <configuration default="false" name="py.test in Test_Group_Add.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python_15" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_Group_Add.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="py.test in Test_Contact_Verify.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python_15" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_Contact_Verify.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="py.test in Test_Group_Delete.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python_15" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_Group_Delete.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.py.test in Test_Group_Delete.py">
     <configuration default="false" name="py.test for test.Test_Group_Add.test_add_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,12 +242,12 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
-    <configuration default="false" name="py.test in Test_Contact_Add.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="py.test for E:/Python/Python_15/test/Test_Contact_Add.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="E:\Python\Python_15\env\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -303,6 +255,54 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_Contact_Add.py&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test in Test_Contact_Add.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python_15" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_Contact_Add.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test for E:/Python/Python_15/test/Test_Group_Add.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="E:\Python\Python_15\env\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python_15" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_Group_Add.py&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test in Test_Group_Delete.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python_15" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_Group_Delete.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
@@ -406,19 +406,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Add.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in Test_Contact_Verify.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Delete.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Add.test_add_group" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in Test_Contact_Add.py" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Add.test_add_group" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for E:/Python/Python_15/test/Test_Contact_Add.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in Test_Contact_Add.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for E:/Python/Python_15/test/Test_Group_Add.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Delete.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in Test_Contact_Add.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Add.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Add.test_add_group" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Delete.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in Test_Contact_Verify.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Delete.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in Test_Contact_Add.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for E:/Python/Python_15/test/Test_Contact_Add.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for E:/Python/Python_15/test/Test_Group_Add.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Add.test_add_group" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -770,21 +770,19 @@
       <option name="project" value="LOCAL" />
       <updated>1492439317830</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="chrome by default">
+      <created>1492440241392</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1492440241392</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="py_test_for_test_Test_Group_Add_test_add_group - 2017.04.17 at 13h 36m 41s.xml">
       <configuration name="py.test for test.Test_Group_Add.test_add_group" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Test_Contact_Add_py - 2017.04.17 at 12h 09m 28s.xml">
-      <configuration name="py.test in Test_Contact_Add.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Test_Contact_Add_py - 2017.04.17 at 12h 24m 53s.xml">
-      <configuration name="py.test in Test_Contact_Add.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Test_Contact_Add_py - 2017.04.17 at 12h 27m 26s.xml">
-      <configuration name="py.test in Test_Contact_Add.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_Test_Contact_Add_py - 2017.04.17 at 13h 05m 57s.xml">
       <configuration name="py.test in Test_Contact_Add.py" configurationId="tests" />
@@ -798,11 +796,20 @@
     <history-entry file="py_test_in_Test_Contact_Add_py - 2017.04.17 at 16h 40m 36s.xml">
       <configuration name="py.test in Test_Contact_Add.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="py_test_in_Test_Contact_Add_py - 2017.04.17 at 16h 56m 03s.xml">
+      <configuration name="py.test in Test_Contact_Add.py" configurationId="tests" />
+    </history-entry>
     <history-entry file="py_test_in_Test_Group_Add_py - 2017.04.17 at 13h 27m 47s.xml">
       <configuration name="py.test in Test_Group_Add.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_Test_Group_Add_py - 2017.04.17 at 13h 38m 17s.xml">
       <configuration name="py.test in Test_Group_Add.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_Test_Group_Delete_py - 2017.04.17 at 16h 58m 47s.xml">
+      <configuration name="py.test in Test_Group_Delete.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_Test_Group_Delete_py - 2017.04.17 at 18h 14m 27s.xml">
+      <configuration name="py.test in Test_Group_Delete.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -862,7 +869,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="all test in one sesion - divide start and end fixtures, add verification for valid fixture" />
     <MESSAGE value="login and logout validation" />
     <MESSAGE value="preconditions for delete and modify group and contacts" />
     <MESSAGE value="Task#10" />
@@ -887,7 +893,8 @@
     <MESSAGE value="string_helper added" />
     <MESSAGE value="add options for command line" />
     <MESSAGE value="add config file&#10;update output for contacts and groups" />
-    <option name="LAST_COMMIT_MESSAGE" value="add config file&#10;update output for contacts and groups" />
+    <MESSAGE value="chrome by default" />
+    <option name="LAST_COMMIT_MESSAGE" value="chrome by default" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -973,6 +980,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="33" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="12" selection-end-column="33" />
+          <folding>
+            <element signature="e#24#53#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1126,6 +1136,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="38" />
+          <folding>
+            <element signature="e#24#53#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1309,8 +1322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="34" column="68" lean-forward="false" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
+        <state relative-caret-position="304">
+          <caret line="19" column="91" lean-forward="false" selection-start-line="19" selection-start-column="91" selection-end-line="19" selection-end-column="91" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

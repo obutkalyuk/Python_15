@@ -2,6 +2,7 @@ import pytest
 
 from fixture.application import Application
 import json
+import os.path
 
 fixture = None
 target = None
@@ -14,8 +15,10 @@ def app(request):
 
     browser = request.config.getoption("--browser")
     config = request.config.getoption("--target")
+
     if target is None:
-        with open(config) as config_file:
+        full_config_name = os.path.join(os.path.dirname(os.path.abspath(__file__)), config)
+        with open(full_config_name) as config_file:
             target = json.load(config_file)
     if (fixture is None) or (not fixture.is_valid()):
         fixture = Application(browser = browser, base_url = target["baseUrl"])
