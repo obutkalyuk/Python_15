@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="487f4814-8d94-4bae-994f-803ae784ae99" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conftest.py" afterPath="$PROJECT_DIR$/conftest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Test_Group_Add.py" afterPath="$PROJECT_DIR$/test/Test_Group_Add.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,24 +18,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="conftest.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/conftest.py">
+      <file leaf-file-name="Test_Group_Add.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/Test_Group_Add.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" column="91" lean-forward="false" selection-start-line="19" selection-start-column="91" selection-end-line="19" selection-end-column="91" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="target.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target.json">
+      <file leaf-file-name="add_group.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/add_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="68">
+              <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,7 +81,6 @@
         <option value="$PROJECT_DIR$/fixture/session.py" />
         <option value="$PROJECT_DIR$/test/tests_phones.py" />
         <option value="$PROJECT_DIR$/fixture/string.py" />
-        <option value="$PROJECT_DIR$/test/Test_Group_Add.py" />
         <option value="$PROJECT_DIR$/test/Test_Contact_Verify.py" />
         <option value="$PROJECT_DIR$/test/Test_Phones.py" />
         <option value="$PROJECT_DIR$/fixture/string_helper.py" />
@@ -93,6 +92,9 @@
         <option value="$PROJECT_DIR$/model/group.py" />
         <option value="$PROJECT_DIR$/fixture/group.py" />
         <option value="$PROJECT_DIR$/conftest.py" />
+        <option value="$PROJECT_DIR$/data/aad_group.py" />
+        <option value="$PROJECT_DIR$/data/add_group.py" />
+        <option value="$PROJECT_DIR$/test/Test_Group_Add.py" />
       </list>
     </option>
   </component>
@@ -191,6 +193,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python_15" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python_15" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -225,23 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in Test_Group_Delete.py">
-    <configuration default="false" name="py.test for test.Test_Group_Add.test_add_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python_15" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.Test_Group_Add.test_add_group&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.py.test in Test_Group_Add.py">
     <configuration default="false" name="py.test for E:/Python/Python_15/test/Test_Contact_Add.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -303,6 +303,22 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_Group_Delete.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test in Test_Group_Add.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python_15" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_Group_Add.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
@@ -406,19 +422,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Add.test_add_group" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for E:/Python/Python_15/test/Test_Contact_Add.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in Test_Contact_Add.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for E:/Python/Python_15/test/Test_Group_Add.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Delete.py" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for E:/Python/Python_15/test/Test_Contact_Add.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in Test_Contact_Add.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for E:/Python/Python_15/test/Test_Group_Add.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Delete.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Add.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Delete.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in Test_Contact_Add.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for E:/Python/Python_15/test/Test_Contact_Add.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for E:/Python/Python_15/test/Test_Group_Add.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Add.test_add_group" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Add.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Delete.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in Test_Contact_Add.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for E:/Python/Python_15/test/Test_Contact_Add.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for E:/Python/Python_15/test/Test_Group_Add.py" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -777,15 +793,19 @@
       <option name="project" value="LOCAL" />
       <updated>1492440241392</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="directory name">
+      <created>1492446277779</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1492446277779</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="py_test_for_test_Test_Group_Add_test_add_group - 2017.04.17 at 13h 36m 41s.xml">
       <configuration name="py.test for test.Test_Group_Add.test_add_group" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Test_Contact_Add_py - 2017.04.17 at 13h 05m 57s.xml">
-      <configuration name="py.test in Test_Contact_Add.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_Test_Contact_Add_py - 2017.04.17 at 13h 10m 44s.xml">
       <configuration name="py.test in Test_Contact_Add.py" configurationId="tests" />
@@ -803,6 +823,9 @@
       <configuration name="py.test in Test_Group_Add.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_Test_Group_Add_py - 2017.04.17 at 13h 38m 17s.xml">
+      <configuration name="py.test in Test_Group_Add.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_Test_Group_Add_py - 2017.04.17 at 21h 03m 13s.xml">
       <configuration name="py.test in Test_Group_Add.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_Test_Group_Delete_py - 2017.04.17 at 16h 58m 47s.xml">
@@ -823,9 +846,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21354167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21354167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46696034" sideWeight="0.5073727" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.35535976" sideWeight="0.49262735" order="2" side_tool="false" content_ui="tabs" x="25" y="32" width="1501" height="767" />
@@ -869,7 +891,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login and logout validation" />
     <MESSAGE value="preconditions for delete and modify group and contacts" />
     <MESSAGE value="Task#10" />
     <MESSAGE value="add list to group tests" />
@@ -894,7 +915,8 @@
     <MESSAGE value="add options for command line" />
     <MESSAGE value="add config file&#10;update output for contacts and groups" />
     <MESSAGE value="chrome by default" />
-    <option name="LAST_COMMIT_MESSAGE" value="chrome by default" />
+    <MESSAGE value="directory name" />
+    <option name="LAST_COMMIT_MESSAGE" value="directory name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -920,19 +942,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/Test_Group_Modify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fixture/contact.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="63" column="58" lean-forward="false" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#0#33#0" expanded="false" />
             <element signature="e#104#118#0" expanded="false" />
             <element signature="e#513#705#0" expanded="false" />
             <element signature="e#753#831#0" expanded="false" />
@@ -999,7 +1014,7 @@
         <state relative-caret-position="986">
           <caret line="58" column="59" lean-forward="false" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#0#33#0" expanded="false" />
             <element signature="e#104#118#0" expanded="false" />
             <element signature="e#513#705#0" expanded="false" />
             <element signature="e#753#831#0" expanded="false" />
@@ -1225,7 +1240,7 @@
         <state relative-caret-position="323">
           <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#30#0" expanded="false" />
             <element signature="e#968#1011#0" expanded="false" />
             <element signature="e#1179#1304#0" expanded="false" />
             <element signature="e#1357#1571#0" expanded="false" />
@@ -1266,7 +1281,7 @@
         <state relative-caret-position="255">
           <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="72" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#0#33#0" expanded="false" />
             <element signature="e#104#118#0" expanded="false" />
             <element signature="e#513#705#0" expanded="false" />
             <element signature="e#753#831#0" expanded="false" />
@@ -1288,14 +1303,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Test_Group_Add.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/group.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1312,6 +1319,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="91" lean-forward="false" selection-start-line="19" selection-start-column="91" selection-end-line="19" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#13#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/target.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1320,13 +1337,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conftest.py">
+    <entry file="file://$PROJECT_DIR$/data/add_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="91" lean-forward="false" selection-start-line="19" selection-start-column="91" selection-end-line="19" selection-end-column="91" />
+        <state relative-caret-position="68">
+          <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Test_Group_Add.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
