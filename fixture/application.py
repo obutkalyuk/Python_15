@@ -48,8 +48,5 @@ class Application:
             wd.find_element_by_name(attribute).send_keys(text)
 
 
-
-
-
     def destroy(self):
         self.wd.quit()

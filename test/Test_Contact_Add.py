@@ -12,7 +12,7 @@ def test_add_contacts(app, json_contacts):
     assert len(old_contacts) + 1 == app.contact.count()
     old_contacts.append(new_contact)
 
-    assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max), "Test message"
+    assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
 
 
 
