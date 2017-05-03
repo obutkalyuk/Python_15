@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="487f4814-8d94-4bae-994f-803ae784ae99" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fixture/db.py" afterPath="$PROJECT_DIR$/fixture/db.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Test_Group_Modify.py" afterPath="$PROJECT_DIR$/test/Test_Group_Modify.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Test_db_ui.py" afterPath="$PROJECT_DIR$/test/Test_db_ui.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,8 +41,8 @@
       <file leaf-file-name="Test_db_ui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/Test_db_ui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -343,7 +342,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in Test_db_ui.py">
+  <component name="RunManager" selected="Python tests.py.test for test.Test_db_ui.test_group_db_list">
     <configuration default="false" name="py.test in Test_db_ui.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -357,22 +356,6 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_db_ui.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="py.test in Test_Group_Add.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python_15" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_Group_Add.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
@@ -423,6 +406,22 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test.Test_db_ui.test_contact_db_list&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test for test.Test_db_ui.test_group_db_list" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python_15" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.Test_db_ui.test_group_db_list&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
@@ -527,18 +526,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in Test_db_ui.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Add.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python.group" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Add.test_add_group" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_db_ui.test_contact_db_list" />
+      <item index="1" class="java.lang.String" itemvalue="Python.group" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Add.test_add_group" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_db_ui.test_contact_db_list" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_db_ui.test_group_db_list" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in Test_db_ui.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_db_ui.test_contact_db_list" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Add.test_add_group" />
-        <item index="3" class="java.lang.String" itemvalue="Python.group" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Add.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_db_ui.test_group_db_list" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in Test_db_ui.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_db_ui.test_contact_db_list" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Add.test_add_group" />
+        <item index="4" class="java.lang.String" itemvalue="Python.group" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -574,13 +573,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1488620203732</updated>
-    </task>
-    <task id="LOCAL-00010" summary="extract GroupHelper">
-      <created>1490456128774</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1490456128774</updated>
     </task>
     <task id="LOCAL-00011" summary="extract ContactHelper&#10;Task#5 - 2-level architecture">
       <created>1490457993771</created>
@@ -918,7 +910,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493674318220</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="7_3 add db&amp;ui verification - group, contact">
+      <created>1493773876247</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1493773876247</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -934,8 +933,8 @@
     <history-entry file="py_test_for_test_Test_db_ui_test_contact_db_list - 2017.05.03 at 03h 02m 14s.xml">
       <configuration name="py.test for test.Test_db_ui.test_contact_db_list" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_Test_Group_Add_py - 2017.05.02 at 18h 17m 11s.xml">
-      <configuration name="py.test in Test_Group_Add.py" configurationId="tests" />
+    <history-entry file="py_test_for_test_Test_db_ui_test_group_db_list - 2017.05.03 at 12h 56m 56s.xml">
+      <configuration name="py.test for test.Test_db_ui.test_group_db_list" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_Test_db_ui_py - 2017.05.02 at 18h 17m 47s.xml">
       <configuration name="py.test in Test_db_ui.py" configurationId="tests" />
@@ -1010,7 +1009,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="delete and modify random group" />
     <MESSAGE value="delete random contact" />
     <MESSAGE value="modify random contact" />
     <MESSAGE value="format str" />
@@ -1035,7 +1033,8 @@
     <MESSAGE value="db_connection via pyMySql" />
     <MESSAGE value="dbfixture added" />
     <MESSAGE value="add db method get_group_list" />
-    <option name="LAST_COMMIT_MESSAGE" value="add db method get_group_list" />
+    <MESSAGE value="7_3 add db&amp;ui verification - group, contact" />
+    <option name="LAST_COMMIT_MESSAGE" value="7_3 add db&amp;ui verification - group, contact" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1051,7 +1050,7 @@
           <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="72" />
+      <option name="time" value="73" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1421,8 +1420,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/Test_db_ui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
