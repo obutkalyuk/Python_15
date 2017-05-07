@@ -2,7 +2,7 @@
 from model.group import Group
 import random
 
-def test_modify_random_group(app, db):
+def test_modify_random_group(app, db, check_ui):
 
     edition = Group(name="Group_first")
 
@@ -17,8 +17,10 @@ def test_modify_random_group(app, db):
     new_groups = db.get_group_list()
     old_groups.remove(updated_group)
     old_groups.append(edition)
-    # old_groups[index] = edition
+
     assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)
+    if check_ui:
+        assert sorted(new_groups, key=Group.id_or_max) == sorted(app.group.get_group_list(), key=Group.id_or_max)
 
 
 
