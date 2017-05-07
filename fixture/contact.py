@@ -24,9 +24,22 @@ class ContactHelper:
         wd.switch_to_alert().accept()
         self.contact_cache = None
 
+    def delete_by_id(self, id):
+        wd = self.app.wd
+        self.select_by_id(id)
+        wd.find_element_by_css_selector("[value='Delete']").click()
+        wd.switch_to_alert().accept()
+        self.contact_cache = None
+
     def select_by_index(self, index):
         wd = self.app.wd
         wd.find_elements_by_name("selected[]")[index].click()
+
+    def select_by_id(self, id):
+        wd = self.app.wd
+        css = "input[value='%s']" % str(id)
+        checkbox = wd.find_element_by_css_selector(css)
+        checkbox.click()
 
     def open_for_edit(self, contact):
         row = self.get_row(contact)
