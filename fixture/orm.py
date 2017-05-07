@@ -1,11 +1,12 @@
 from pony.orm import *
 from datetime import datetime
 from model.group import Group
-from model.contact import  Contact
+from model.contact import Contact
+from pymysql.converters import decoders
 
 
 
-class ORMFizture:
+class ORMFixture:
 
     db = Database()
 
@@ -24,14 +25,28 @@ class ORMFizture:
         deprecated = Optional(str, column = 'deprecated')
 
     def __init__(self, host, name, user, password):
-        self.db.bind('mysql', host=host, database=name, user=user, password=password)
+        self.db.bind('mysql', host=host, database=name, user=user, password=password, conv=decoders)
         self.db.generate_mapping()
+        sql_debug(True)
 
     def convert_groups_to_model(self, groups):
         def convert(group):
             return Group(id = str(group.id), name = group.name, header = group.header, footer = group.footer)
         return list(map(convert, groups))
 
+    def convert_contacts_to_model(self, contacts):
+        def convert(contact):
+            return Contact(id=str(contact.id), firstName=contact.firstname, lastName=contact.lastname)
+        return list(map(convert, contacts))
+
+
     @db_session
     def get_group_list(self):
-        return self.convert_groups_to_model(select(g for g in ORMFizture.ORM_Group))
+        return self.convert_groups_to_model(select(g for g in ORMFixture.ORM_Group))
+
+    @db_session
+    def get_contact_list(self):
+        return self.convert_contacts_to_model(select(c for c in ORMFixture.ORM_Contact if c.deprecated is None))
+
+
+
