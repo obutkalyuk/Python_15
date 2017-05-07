@@ -19,6 +19,9 @@ def load_config(file):
             target = json.load(config_file)
     return target
 
+@pytest.fixture
+def check_ui(request):
+    return request.config.getoption("--check-ui")
 
 @pytest.fixture
 def app(request):
@@ -56,6 +59,7 @@ def stop(request):
 def pytest_addoption(parser):
     parser.addoption("--browser", action ="store", default = "firefox")
     parser.addoption("--target", action ="store", default = "target.json")
+    parser.addoption("--check-ui", action ="store_true")
 
 def pytest_generate_tests(metafunc):
     for fixture in metafunc.fixturenames:

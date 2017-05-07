@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="487f4814-8d94-4bae-994f-803ae784ae99" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fixture/group.py" afterPath="$PROJECT_DIR$/fixture/group.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Test_Group_Modify.py" afterPath="$PROJECT_DIR$/test/Test_Group_Modify.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conftest.py" afterPath="$PROJECT_DIR$/conftest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Test_Group_Delete.py" afterPath="$PROJECT_DIR$/test/Test_Group_Delete.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,12 +19,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="check_db_connection.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/check_db_connection.py">
+      <file leaf-file-name="Test_Group_Delete.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/Test_Group_Delete.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="136">
+              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding>
+                <element signature="e#24#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_Group_Modify.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/Test_Group_Modify.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#53#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,8 +46,8 @@
       <file leaf-file-name="conftest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conftest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="1088">
+              <caret line="64" column="41" lean-forward="true" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -41,45 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_Group_Delete.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/Test_Group_Delete.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="28" />
-              <folding>
-                <element signature="e#24#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_Group_Modify.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/Test_Group_Modify.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-158">
-              <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-              <folding>
-                <element signature="e#24#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_Group_Add.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/Test_Group_Add.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="group.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixture/group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="90" column="22" lean-forward="false" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="22" />
               <folding>
                 <element signature="e#164#408#0" expanded="false" />
                 <element signature="e#462#596#0" expanded="false" />
@@ -91,18 +71,6 @@
                 <element signature="e#2256#2331#0" expanded="false" />
                 <element signature="e#2372#2545#0" expanded="false" />
                 <element signature="e#2588#2746#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixture/db.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,15 +133,15 @@
         <option value="$PROJECT_DIR$/check_db_connection.py" />
         <option value="$PROJECT_DIR$/target.json" />
         <option value="$PROJECT_DIR$/test/test_db_ui.py" />
-        <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/test/Test_db_ui.py" />
         <option value="$PROJECT_DIR$/fixture/db.py" />
         <option value="$PROJECT_DIR$/test/Test_Group_Add.py" />
         <option value="$PROJECT_DIR$/test/Test_Contact_Add.py" />
-        <option value="$PROJECT_DIR$/test/Test_Group_Delete.py" />
         <option value="$PROJECT_DIR$/fixture/group.py" />
         <option value="$PROJECT_DIR$/test/Test_Group_Modify.py" />
+        <option value="$PROJECT_DIR$/conftest.py" />
+        <option value="$PROJECT_DIR$/test/Test_Group_Delete.py" />
       </list>
     </option>
   </component>
@@ -336,71 +304,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in Test_Group_Modify.py">
-    <configuration default="false" name="py.test for test.Test_Group_Delete.test_delete_random_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python_15" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.Test_Group_Delete.test_delete_random_group&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="py.test for test.Test_Contact_Add.test_add_contacts" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python_15" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.Test_Contact_Add.test_add_contacts&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="py.test in Test_Group_Delete.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python_15" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_Group_Delete.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="py.test for test.Test_Group_Modify.test_modify_random_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python_15" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.Test_Group_Modify.test_modify_random_group&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.py.test for test.Test_Group_Delete.test_delete_random_group">
     <configuration default="false" name="py.test in Test_Group_Modify.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -415,6 +319,54 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_Group_Modify.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test for E:/Python/Python_15/test/Test_Group_Delete.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="E:\Python\Python_15\env\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python_15" />
+      <option name="_new_keywords" value="&quot;--check-ui&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_Group_Delete.py&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test in Test_Group_Delete.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="E:\Python\Python_15\env\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python_15" />
+      <option name="_new_keywords" value="&quot;--target&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test_Group_Delete.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test for test.Test_Group_Delete.test_delete_random_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="E:\Python\Python_15\env\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python_15" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.Test_Group_Delete.test_delete_random_group&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
@@ -516,20 +468,18 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Delete.test_delete_random_group" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Contact_Add.test_add_contacts" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Modify.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for E:/Python/Python_15/test/Test_Group_Delete.py" />
       <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Delete.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Modify.test_modify_random_group" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Modify.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Delete.test_delete_random_group" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Modify.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Modify.test_modify_random_group" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Delete.test_delete_random_group" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Delete.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Contact_Add.test_add_contacts" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test.Test_Group_Delete.test_delete_random_group" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Delete.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for E:/Python/Python_15/test/Test_Group_Delete.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in Test_Group_Modify.py" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -565,13 +515,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1488620203732</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Delete first contact">
-      <created>1490470988954</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1490470988954</updated>
     </task>
     <task id="LOCAL-00016" summary="Test Modify contact">
       <created>1490479289063</created>
@@ -909,39 +852,46 @@
       <option name="project" value="LOCAL" />
       <updated>1494147078964</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="modify group - using db">
+      <created>1494149536997</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1494149536997</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_test_Test_Group_Delete_test_delete_random_group - 2017.05.07 at 10h 50m 52s.xml">
+    <history-entry file="py_test_for_E__Python_Python_15_test_Test_Group_Delete_py - 2017.05.07 at 13h 04m 07s.xml">
+      <configuration name="py.test for E:/Python/Python_15/test/Test_Group_Delete.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_E__Python_Python_15_test_Test_Group_Delete_py - 2017.05.07 at 13h 04m 42s.xml">
+      <configuration name="py.test for E:/Python/Python_15/test/Test_Group_Delete.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_test_Test_Group_Delete_test_delete_random_group - 2017.05.07 at 13h 04m 48s.xml">
       <configuration name="py.test for test.Test_Group_Delete.test_delete_random_group" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_Test_Group_Modify_test_modify_random_group - 2017.05.07 at 10h 56m 09s.xml">
-      <configuration name="py.test for test.Test_Group_Modify.test_modify_random_group" configurationId="tests" />
+    <history-entry file="py_test_for_test_Test_Group_Delete_test_delete_random_group - 2017.05.07 at 13h 09m 00s.xml">
+      <configuration name="py.test for test.Test_Group_Delete.test_delete_random_group" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_Test_Group_Modify_test_modify_random_group - 2017.05.07 at 11h 11m 33s.xml">
-      <configuration name="py.test for test.Test_Group_Modify.test_modify_random_group" configurationId="tests" />
+    <history-entry file="py_test_for_test_Test_Group_Delete_test_delete_random_group - 2017.05.07 at 13h 09m 33s.xml">
+      <configuration name="py.test for test.Test_Group_Delete.test_delete_random_group" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_Test_Group_Modify_test_modify_random_group - 2017.05.07 at 11h 13m 03s.xml">
-      <configuration name="py.test for test.Test_Group_Modify.test_modify_random_group" configurationId="tests" />
+    <history-entry file="py_test_for_test_Test_Group_Delete_test_delete_random_group - 2017.05.07 at 13h 09m 56s.xml">
+      <configuration name="py.test for test.Test_Group_Delete.test_delete_random_group" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_Test_Group_Modify_test_modify_random_group - 2017.05.07 at 11h 30m 29s.xml">
-      <configuration name="py.test for test.Test_Group_Modify.test_modify_random_group" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Test_Group_Delete_py - 2017.05.04 at 16h 21m 40s.xml">
+    <history-entry file="py_test_in_Test_Group_Delete_py - 2017.05.07 at 13h 05m 01s.xml">
       <configuration name="py.test in Test_Group_Delete.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_Test_Group_Modify_py - 2017.05.07 at 11h 03m 17s.xml">
-      <configuration name="py.test in Test_Group_Modify.py" configurationId="tests" />
+    <history-entry file="py_test_in_Test_Group_Delete_py - 2017.05.07 at 13h 06m 25s.xml">
+      <configuration name="py.test in Test_Group_Delete.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_Test_Group_Modify_py - 2017.05.07 at 11h 10m 43s.xml">
-      <configuration name="py.test in Test_Group_Modify.py" configurationId="tests" />
+    <history-entry file="py_test_in_Test_Group_Delete_py - 2017.05.07 at 13h 07m 06s.xml">
+      <configuration name="py.test in Test_Group_Delete.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_Test_Group_Modify_py - 2017.05.07 at 11h 23m 08s.xml">
-      <configuration name="py.test in Test_Group_Modify.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Test_Group_Modify_py - 2017.05.07 at 11h 30m 58s.xml">
-      <configuration name="py.test in Test_Group_Modify.py" configurationId="tests" />
+    <history-entry file="py_test_in_Test_Group_Delete_py - 2017.05.07 at 13h 07m 39s.xml">
+      <configuration name="py.test in Test_Group_Delete.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -962,7 +912,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46696034" sideWeight="0.5073727" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3274596" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.35535976" sideWeight="0.49262735" order="2" side_tool="false" content_ui="tabs" x="25" y="422" width="1501" height="377" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.35535976" sideWeight="0.49262735" order="2" side_tool="false" content_ui="tabs" x="25" y="422" width="1501" height="377" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2533512" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59090906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1001,7 +951,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add test_phones" />
     <MESSAGE value="secondaryPhone and clear phones" />
     <MESSAGE value="split strings" />
     <MESSAGE value="verify random contact" />
@@ -1026,7 +975,8 @@
     <MESSAGE value="modify add group with db" />
     <MESSAGE value="modify add contact with db" />
     <MESSAGE value="delete group - using db" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete group - using db" />
+    <MESSAGE value="modify group - using db" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify group - using db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1057,7 +1007,7 @@
           <option name="timeStamp" value="78" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="79" />
+      <option name="time" value="80" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1213,14 +1163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/check_db_connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/_pytest/assertion/rewrite.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -1327,16 +1269,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/_pytest/python.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -1353,20 +1285,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Test_Group_Delete.py">
+    <entry file="file://$PROJECT_DIR$/check_db_connection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="e#24#53#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fixture/group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="90" column="22" lean-forward="false" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="22" />
           <folding>
             <element signature="e#164#408#0" expanded="false" />
             <element signature="e#462#596#0" expanded="false" />
@@ -1382,10 +1312,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="41" lean-forward="true" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/Test_Group_Modify.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158">
-          <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        <state relative-caret-position="136">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Test_Group_Delete.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding>
             <element signature="e#24#53#0" expanded="true" />
           </folding>
