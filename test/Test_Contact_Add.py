@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from model.contact import Contact
 
-def test_add_contacts(app, db, json_contacts):
+def test_add_contacts(app, db, check_ui, json_contacts):
     contact = json_contacts
     new_contact = contact
     old_contacts = db.get_contact_list()
@@ -12,6 +12,7 @@ def test_add_contacts(app, db, json_contacts):
     old_contacts.append(new_contact)
 
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
-
+    if check_ui:
+        sorted(new_contacts, key=Contact.id_or_max) == sorted(app.contact.get_contact_list(), key=Contact.id_or_max)
 
 
