@@ -51,6 +51,11 @@ class ContactHelper:
         editLink = row.find_element_by_css_selector("[href^='edit']")
         editLink.click()
 
+    def open_for_edit_by_id(self, id):
+        row = self.get_row_by_id(id)
+        editLink = row.find_element_by_css_selector("[href^='edit']")
+        editLink.click()
+
     def open_for_view(self, contact):
         row = self.get_row(contact)
         editLink = row.find_element_by_css_selector("[href^='view']")
@@ -73,6 +78,12 @@ class ContactHelper:
         row = wd.find_element_by_xpath(xpath)
         return row
 
+    def get_row_by_id(self, id):
+        wd = self.app.wd
+        locator = "//tr[td[input[@value='%s']]]" % str(id)
+        row = wd.find_element_by_xpath(locator)
+        return row
+
     def get_id_from_table(self, contact):
         row = self.get_row(contact)
         id = row.find_element_by_name("selected[]").get_attribute("value")
@@ -81,6 +92,13 @@ class ContactHelper:
     def modify_by_index(self, index, edition):
         wd = self.app.wd
         self.open_for_edit_by_index(index)
+        self.set_fields(edition)
+        wd.find_element_by_name("update").click()
+        self.contact_cache = None
+
+    def modify_by_id(self, id, edition):
+        wd = self.app.wd
+        self.open_for_edit_by_id(id)
         self.set_fields(edition)
         wd.find_element_by_name("update").click()
         self.contact_cache = None
