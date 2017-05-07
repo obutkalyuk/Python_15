@@ -21,6 +21,11 @@ class GroupHelper:
         xpath = "//span[%s]/input[@name='selected[]']" % str(index+1)
         wd.find_element_by_xpath(xpath).click()
 
+    def select_group_by_id(self, id):
+        wd = self.app.wd
+        css = "input[value='%s']" % str(id)
+        wd.find_element_by_css_selector(css).click()
+
     def delete_first(self):
         self.delete_by_index(0)
 
@@ -28,6 +33,14 @@ class GroupHelper:
         wd = self.app.wd
         self.open_group_page()
         self.select_group_by_index(index)
+        wd.find_element_by_name("delete").click()
+        self.return_to_group_page()
+        self.group_cache = None
+
+    def delete_by_id(self, id):
+        wd = self.app.wd
+        self.open_group_page()
+        self.select_group_by_id(id)
         wd.find_element_by_name("delete").click()
         self.return_to_group_page()
         self.group_cache = None
