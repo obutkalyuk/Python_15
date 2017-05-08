@@ -36,7 +36,7 @@ class DbFixture:
                 Contact()
                 list.append( Contact(id=str(id), firstName=firstName, lastName=lastName, address=address,
                                      homePhone=homePhone, mobilePhone=mobilePhone, workPhone=workPhone,
-                                     email1=email1, email2=email2, email3=email2))
+                                     email1=email1, email2=email2, email3=email3))
 
         finally:
             cursor.close()

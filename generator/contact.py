@@ -1,7 +1,5 @@
 from model.contact import Contact
-from fixture.string_helper import random_string
-from fixture.string_helper import random_set
-from fixture.string_helper import random_digits
+from fixture.string_helper import *
 import os.path
 import jsonpickle
 import getopt

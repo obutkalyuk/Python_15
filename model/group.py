@@ -1,4 +1,5 @@
 from sys import maxsize
+from fixture.string_helper import *
 
 class Group:
     def __init__(self, name=None, header=None, footer=None, id = None):
@@ -6,6 +7,12 @@ class Group:
         self.header = header
         self.footer = footer
         self.id = id
+
+    def random(self, id = None):
+        self.id = id
+        self.name = random_string("name", 10)
+        self.header = random_string("header", 20)
+        self.footer = random_string("footer", 20)
 
     def id_or_max(self):
         if self.id:

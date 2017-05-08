@@ -20,3 +20,18 @@ def test_verify_random_contacts(app):
     assert contact_from_home_page.address == contact_from_edit_page.address
     assert contact_from_home_page.all_phones == contact_from_edit_page.merge_phones()
     assert contact_from_home_page.all_emails == contact_from_edit_page.merge_emails()
+
+def test_verify_all_contacts(app, db):
+    def clean(contact):
+        return contact.clean()
+
+    if app.contact.count() == 0:
+        app.contact.create(Contact().random())
+    contacts = map(clean, db.get_contact_list())
+    for element in contacts:
+        contact_from_home_page = app.contact.get_info_from_home_page_by_id(element.id)
+        assert contact_from_home_page.firstName == element.firstName
+        assert contact_from_home_page.lastName == element.lastName
+        assert contact_from_home_page.address == element.address
+        assert contact_from_home_page.all_phones == element.merge_phones()
+        assert contact_from_home_page.all_emails == element.merge_emails()

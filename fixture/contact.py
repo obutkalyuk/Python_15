@@ -120,6 +120,10 @@ class ContactHelper:
         row = self.get_row_by_index(index)
         return self.get_info_from_home_page_by_row(row)
 
+    def get_info_from_home_page_by_id(self, id):
+        row = self.get_row_by_id(id)
+        return self.get_info_from_home_page_by_row(row)
+
     def get_info_from_home_page_by_row(self, row):
         id = row.find_element_by_name("selected[]").get_attribute("id")
         last_name = row.find_element_by_xpath(".//td[2]").text
@@ -130,6 +134,8 @@ class ContactHelper:
         contact = Contact(id=id, firstName=fisrt_name, lastName=last_name, address=address, all_phones = phones, all_emails = emails
                           )
         return contact
+
+
 
     def get_info_from_edit_page(self, index):
         self.open_for_edit_by_index(index)

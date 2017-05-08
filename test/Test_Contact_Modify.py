@@ -34,7 +34,7 @@ def test_modify_contacts(app, db, check_ui):
         sorted(new_contacts, key=Contact.id_or_max) == sorted(app.contact.get_contact_list(), key=Contact.id_or_max)
 
 def test_modify_random_contacts(app, db, check_ui):
-    if app.contact.count() == 0:
+    if len(db.get_contact_list()) == 0:
         app.contact.create(Contact(firstName="Jack", lastName="London", address="Alaska", homePhone="123",
                                    mobilePhone="456", workPhone="789", email1="email1@com.com",
                                    email2="email2@com.com", email3="email3@com.com"))
