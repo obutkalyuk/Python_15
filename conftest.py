@@ -1,6 +1,7 @@
 import pytest
 from fixture.application import Application
 from fixture.db import DbFixture
+from fixture.orm import ORMFixture
 import jsonpickle
 import json
 import os.path
@@ -36,17 +37,26 @@ def app(request):
 
     return fixture
 
+# via SQL
+# @pytest.fixture(scope = 'session')
+# def db(request):
+#     db_config= load_config(request.config.getoption("--target"))['db']
+#
+#     dbfixture = DbFixture(host=db_config['host'], name = db_config['name'], user = db_config['user'], password = db_config['password'])
+#     def fin():
+#         dbfixture.destroy()
+#     request.addfinalizer(fin)
+#     return dbfixture
 
+#  via ORM
 @pytest.fixture(scope = 'session')
 def db(request):
     db_config= load_config(request.config.getoption("--target"))['db']
 
-    dbfixture = DbFixture(host=db_config['host'], name = db_config['name'], user = db_config['user'], password = db_config['password'])
-    def fin():
-        dbfixture.destroy()
-    request.addfinalizer(fin)
-    return dbfixture
+    dbfixture = ORMFixture(host=db_config['host'], name = db_config['name'], user = db_config['user'], password = db_config['password'])
 
+
+    return dbfixture
 
 @pytest.fixture(scope = 'session', autouse = True)
 def stop(request):

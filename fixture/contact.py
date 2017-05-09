@@ -1,5 +1,6 @@
 from model.contact import Contact
 import re
+from selenium.webdriver.support.ui import Select
 
 
 class ContactHelper:
@@ -136,7 +137,6 @@ class ContactHelper:
         return contact
 
 
-
     def get_info_from_edit_page(self, index):
         self.open_for_edit_by_index(index)
         return self.get_fields()
@@ -205,5 +205,19 @@ class ContactHelper:
         contact = Contact( homePhone=homePhone,
                           mobilePhone=mobilePhone, workPhone=workPhone, secondaryPhone=secondaryPhone)
         return contact
+
+    def add_contact_to_group(self, contact, group):
+        wd = self.app.wd
+        self.select_by_id(contact.id)
+        add_to_group_select = Select(wd.find_element_by_css_selector("select[name='to_group']"))
+        add_to_group_select.select_by_visible_text(group.name)
+        add_button = wd.find_element_by_css_selector("input[value='Add to']")
+        add_button.click()
+
+    def get_contact_list_for_group(self, group):
+        wd = self.app.wd
+        group_select = Select(wd.find_element_by_css_selector("select[name='group']"))
+        group_select.select_by_visible_text(group.name)
+        return self.get_contact_list()
 
 
