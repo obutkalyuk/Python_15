@@ -215,9 +215,17 @@ class ContactHelper:
         add_button.click()
 
     def get_contact_list_for_group(self, group):
+        self.filter(group)
+        return self.get_contact_list()
+
+    def filter(self, group):
         wd = self.app.wd
         group_select = Select(wd.find_element_by_css_selector("select[name='group']"))
         group_select.select_by_visible_text(group.name)
-        return self.get_contact_list()
 
-
+    def remove_contact_to_group(self, contact, group):
+        wd = self.app.wd
+        self.filter(group)
+        self.select_by_id(contact.id)
+        remove_button = wd.find_element_by_css_selector("input[name='remove']")
+        remove_button.click()

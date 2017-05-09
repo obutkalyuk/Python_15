@@ -30,6 +30,6 @@ def test_add_contacts_to_group(app, db, check_ui):
     assert sorted(old_contacts_in_group, key=Contact.id_or_max) == sorted(new_contacts_in_group, key=Contact.id_or_max)
     if check_ui:
         app.return_to_home_page()
-        sorted(new_contacts_in_group, key=Contact.id_or_max) == sorted(app.contact.get_contact_list_for_group(group), key=Contact.id_or_max)
+        sorted(old_contacts_in_group, key=Contact.id_or_max) == sorted(app.contact.get_contact_list_for_group(group), key=Contact.id_or_max)
 
 

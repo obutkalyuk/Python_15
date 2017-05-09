@@ -87,7 +87,6 @@ class GroupHelper:
         self.app.type_text("group_header", group.header)
         self.app.type_text("group_footer", group.footer)
 
-
     def get_group_list(self):
         if self.group_cache is None:
             self.group_cache = []

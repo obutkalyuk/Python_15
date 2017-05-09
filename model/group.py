@@ -13,6 +13,7 @@ class Group:
         self.name = random_string("name", 10)
         self.header = random_string("header", 20)
         self.footer = random_string("footer", 20)
+        return self
 
     def id_or_max(self):
         if self.id:
