@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="487f4814-8d94-4bae-994f-803ae784ae99" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Test_Contact_Add.py" afterPath="$PROJECT_DIR$/test/Contacts/Test_Contact_Add.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Test_Contact_Delete.py" afterPath="$PROJECT_DIR$/test/Contacts/Test_Contact_Delete.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Test_Contact_From_Group_Delete.py" afterPath="$PROJECT_DIR$/test/Contacts/Test_Contact_From_Group_Delete.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Test_Contact_Modify.py" afterPath="$PROJECT_DIR$/test/Contacts/Test_Contact_Modify.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Test_Contact_To_Group_Add.py" afterPath="$PROJECT_DIR$/test/Contacts/Test_Contact_To_Group_Add.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Test_Contact_Verify.py" afterPath="$PROJECT_DIR$/test/Contacts/Test_Contact_Verify.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Test_Group_Add.py" afterPath="$PROJECT_DIR$/test/Groups/Test_Group_Add.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Test_Group_Delete.py" afterPath="$PROJECT_DIR$/test/Groups/Test_Group_Delete.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/Test_Group_Modify.py" afterPath="$PROJECT_DIR$/test/Groups/Test_Group_Modify.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -576,13 +567,6 @@
       <option name="presentableId" value="Default" />
       <updated>1488620203732</updated>
     </task>
-    <task id="LOCAL-00033" summary="delete and modify random group">
-      <created>1491079931935</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1491079931935</updated>
-    </task>
     <task id="LOCAL-00034" summary="delete random contact">
       <created>1491080311963</created>
       <option name="number" value="00034" />
@@ -919,7 +903,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494604319469</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="change structure">
+      <created>1494605247389</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1494605247389</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1010,7 +1001,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="contact - update Test_contact_add for using generated data" />
     <MESSAGE value="db_connection via mysql.connector" />
     <MESSAGE value="db_connection via pyMySql" />
     <MESSAGE value="dbfixture added" />
@@ -1035,7 +1025,8 @@
     <MESSAGE value="remove contact from group -  completed" />
     <MESSAGE value="data files added" />
     <MESSAGE value="jenkins config" />
-    <option name="LAST_COMMIT_MESSAGE" value="jenkins config" />
+    <MESSAGE value="change structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="change structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
