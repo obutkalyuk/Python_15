@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="487f4814-8d94-4bae-994f-803ae784ae99" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jenkins_config.png" afterPath="$PROJECT_DIR$/jenkins_config.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Groups/Test_Group_Modify.py" afterPath="$PROJECT_DIR$/test/Groups/Test_Group_Modify.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contact.py" pinned="false" current-in-tab="true">
         <entry file="file://E:/Jenkins/workspace/addressbook_tests/generator/contact.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -84,7 +84,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_Group_Modify.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Test_Group_Modify.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/Groups/Test_Group_Modify.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
@@ -597,13 +597,6 @@
       <option name="presentableId" value="Default" />
       <updated>1488620203732</updated>
     </task>
-    <task id="LOCAL-00035" summary="modify random contact">
-      <created>1491081620297</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1491081620297</updated>
-    </task>
     <task id="LOCAL-00036" summary="format str">
       <created>1491159801499</created>
       <option name="number" value="00036" />
@@ -940,7 +933,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494605263587</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="clear tests">
+      <created>1494605864089</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1494605864089</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1032,7 +1032,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="db_connection via mysql.connector" />
     <MESSAGE value="db_connection via pyMySql" />
     <MESSAGE value="dbfixture added" />
     <MESSAGE value="add db method get_group_list" />
@@ -1057,7 +1056,8 @@
     <MESSAGE value="data files added" />
     <MESSAGE value="jenkins config" />
     <MESSAGE value="change structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="change structure" />
+    <MESSAGE value="clear tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="clear tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1490,6 +1490,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/Groups/Test_Group_Modify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://E:/Jenkins/workspace/addressbook_tests/generator/group.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1507,14 +1515,6 @@
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/Groups/Test_Group_Modify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
